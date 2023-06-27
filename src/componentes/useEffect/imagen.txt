@@ -1,0 +1,32 @@
+import { useEffect } from "react";
+
+const image = () => {
+
+
+   useEffect(() => {
+      return () => {
+         console.log("Image1 se desmonta")
+
+    }
+},[]);
+
+
+
+    const urlImage = "https://images.unsplash.com/photo-1673263229942-1d26f16ecd1a?ixlib=rb-4.0.3&ixid-MnwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufHx8&auto-format&fit-crop&w-1170&q-80";
+
+
+return (
+    <img src={urlImage} alt="Imagen no cargo"/>
+
+   )
+}
+export default Image; //renderizado condicional en Contador.js cambiar el siguiente codigo
+ return(
+ <div>
+ {
+      count % 2 === 0 ? <image/> : <p>Imagen oculta</p>
+   }
+  <button onClick = {() => setCount(count + 1)}>
+
+y agregar el import image from "./image";
+tambien comentamos el primer useEffect de contador.js

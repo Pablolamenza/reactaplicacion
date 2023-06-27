@@ -1,0 +1,44 @@
+import React, { useState } from "react"
+
+const CambiarImagen = () => {
+
+    const [imagen, setImagen] = useState("")
+
+   const ANIMAL_IMAGENES = {
+        img1: "",
+        img2: "",
+        img3: "",
+  };
+      
+
+  const clickImg1 = () => {
+        setImagen(ANIMAL_IMAGENES.img1)
+}
+
+  const clickImg2 = () => {
+        setImagen(ANIMAL_IMAGENES.img2)
+}
+
+
+const clickImg3 = () => {
+        setImagen(ANIMAL_IMAGENES.img3)
+}
+
+
+
+return {
+
+   <div>
+      <h2>Cambiar imagen</h2>
+         <button onClick={clickImg1}>Img1</button>
+         <button onClick={clickImg2}>Img2</button>     
+         <button onClick={clickImg3}>Img3</button>
+
+     <img src={imagen} alt="imagen" />
+
+ </div>
+
+  }
+}
+
+export default Cambiarimagen
